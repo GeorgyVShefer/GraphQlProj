@@ -1,0 +1,25 @@
+type Query {
+
+    bookById (id:ID): Book
+}
+type Book {
+
+    id:ID
+    title:String
+    pageCount:Int
+    Author: Author
+}
+
+type Mutation{
+
+    crateAuthor(firstName: String!, lastName: String!):Author
+}
+
+type Author{
+
+    id:ID
+    firstName: String
+    lastName: String
+}
+
+
